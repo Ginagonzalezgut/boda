@@ -10,6 +10,8 @@ import { ButtonComponent } from '../button/button.component';
 import { FooterComponent } from '../footer/footer.component';
 import { IconComponent } from '../icon/icon.component';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-rsvp',
   imports: [
@@ -62,10 +64,16 @@ export class RsvpComponent {
 
     this.formService.enviarFormulario(datos).subscribe({
       next: () => {
+        gtag('event', 'form_success', {
+          event_category: 'RSVP enviado',
+        });
         this.loading = false;
         this.done = true;
       },
       error: (err) => {
+        gtag('event', 'form_error', {
+          event_category: 'RSVP error',
+        });
         console.error('Error al enviar', err);
         this.loading = false;
         this.error = true;

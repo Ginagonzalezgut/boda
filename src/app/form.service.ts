@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class FormService {
-  private scriptURL = 'https://silver-stork-114972.hostingersite.com/proxy.php';
+  private scriptURL = 'https://giselleyfernando.com/proxy.php';
 
   constructor(private http: HttpClient) {}
 
