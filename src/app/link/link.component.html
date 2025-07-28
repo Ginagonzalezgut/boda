@@ -1,9 +1,11 @@
 <a
+  #anchor
   href="{{ href }}"
   class="button"
   [class.button--dark]="isDark"
   [class.button--ondark]="onDark"
   target="{{ target }}"
+  (click)="onClick()"
 >
   <ng-content />
 </a>

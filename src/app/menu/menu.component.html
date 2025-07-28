@@ -4,7 +4,7 @@
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
       routerLink="/"
-      (click)="onClickMenuItem()"
+      (click)="onClickMenuItem('inicio')"
       >Inicio</a
     >
   </li>
@@ -12,7 +12,7 @@
     <a
       routerLinkActive="active"
       routerLink="/nuestra-historia"
-      (click)="onClickMenuItem()"
+      (click)="onClickMenuItem('nuestra-historia')"
       >Nuestra Historia</a
     >
   </li>
@@ -20,12 +20,15 @@
     <a
       routerLinkActive="active"
       routerLink="/la-ciudad"
-      (click)="onClickMenuItem()"
+      (click)="onClickMenuItem('la-ciudad')"
       >La Ciudad
     </a>
   </li>
   <li>
-    <a routerLinkActive="active" routerLink="/faq" (click)="onClickMenuItem()"
+    <a
+      routerLinkActive="active"
+      routerLink="/faq"
+      (click)="onClickMenuItem('faq')"
       >FAQ</a
     >
   </li>
