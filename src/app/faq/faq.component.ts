@@ -48,7 +48,7 @@ export class FaqComponent {
         {
           question: '¿Cómo confirmo mi asistencia?',
           answer:
-            'Puedes confirmar directamente desde esta web, en la sección “RSVP”. Por favor responde antes del 15 de septiembre, ya que necesitamos saber cuántos invitados asistirán.',
+            'Puedes confirmar directamente desde esta web, en la sección “RSVP”.',
         },
         {
           question: '¿Qué hago si necesito cambiar mi respuesta?',
